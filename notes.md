@@ -2,6 +2,7 @@
 
 https://jsmastery.com/video-kit/8fcd696f-9147-492c-bb96-a4d8108f849c
 
+video : "https://youtu.be/iYOz165wGkQ?feature=shared"
 
 # Setting up the Project
 
