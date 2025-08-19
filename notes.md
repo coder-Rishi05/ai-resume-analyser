@@ -17,5 +17,11 @@ here . will create the project in the same folder.
 
 ```
 Its advance open source internal OS. A remote desktop environment.
+
+Adding Puter js
+
+<script src="https://js.puter.com/v2/"></script>
+
+
 ```
 
