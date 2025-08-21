@@ -13,17 +13,31 @@ const upload = () => {
     setFile(file);
   };
 
+  const handleAnalyse = async ({
+    companyName,
+    jobTitle,
+    JobDescription,
+    file,
+  }: {
+    companyName: string;
+    jobTitle: string;
+    JobDescription: string;
+    file: File;
+  }) => {};
+
   const handleSubmit = (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
     const form = e.currentTarget.closest("form");
     if (!form) return;
     const formData = new FormData(form);
 
-    const companyName = formData.get("company-name");
-    const jobTitle = formData.get("job-title");
-    const JobDescription = formData.get("job-description");
+    const companyName = formData.get("company-name") as string;
+    const jobTitle = formData.get("job-title") as string;
+    const JobDescription = formData.get("job-description") as string;
 
-    console.log(companyName, jobTitle, JobDescription, file);
+    // console.log(companyName, jobTitle, JobDescription, file);
+    if (!file) return;
+    handleAnalyse({ companyName, jobTitle, JobDescription, file });
   };
 
   return (
